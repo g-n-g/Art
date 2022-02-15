@@ -1,0 +1,32 @@
+.linkStyle_1{font-family: 'Georgia',serif;
+font-size: 20px; 
+margin:0;
+color: #FEFFFF;
+word-wrap: break-word;}
+a.linkStyle_1:visited{color:#FEFFFF; text-decoration:underline;}
+a.linkStyle_1:hover{color:#FEFFFF; text-decoration:none;}
+.linkStyle_4{font-family: 'Georgia',serif;
+font-size: 20px; 
+color: #FEFFFF;
+text-decoration: none; 
+/*110#00F900#FEFFFF#FEFFFF*/
+word-wrap: break-word;}
+a.linkStyle_4:visited{color:#FEFFFF; text-decoration:underline;}
+a.linkStyle_4:hover{color:#FEFFFF; text-decoration:none;}
+.Style7{font-family: 'Zapfino';
+font-size: 18px; 
+font-weight:700; 
+margin:0;
+color: #005D64;
+word-wrap: break-word;}
+.Style8{font-family: 'Georgia',serif;
+font-size: 15px; 
+margin:0;
+color: #005D64;
+word-wrap: break-word;}
+body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing: grayscale}
+a.outerlink{text-decoration:none}
+.animhidden{opacity: 0}
+.animvisible{opacity: 1}
+.animhidden{opacity: 0}
+.animvisible{opacity: 1}
