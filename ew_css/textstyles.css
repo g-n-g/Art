@@ -14,7 +14,24 @@ margin:0;
 color: #09C8C9;
 word-wrap: break-word;}
 .Style4{font-family: 'AcademyEngravedLetPlain','Academy Engraved LET';
-font-size: 34px; 
+font-size: 33px; 
+font-weight:700; 
+margin:0;
+color: #14A6AF;
+word-wrap: break-word;}
+.Style5{font-family: 'Zapfino';
+font-size: 14px; 
+font-weight:700; 
+margin:0;
+color: #14A6AE;
+word-wrap: break-word;}
+.Style6{font-family: 'AcademyEngravedLetPlain','Academy Engraved LET';
+font-size: 20px; 
+margin:0;
+color: #09C8C9;
+word-wrap: break-word;}
+.Style7{font-family: 'AcademyEngravedLetPlain','Academy Engraved LET';
+font-size: 26px; 
 font-weight:700; 
 margin:0;
 color: #14A6AF;
