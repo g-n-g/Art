@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AlmaPura</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="almapura.css">
+<script type="text/javascript">
+if(/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    window.location.replace("https://apps.apple.com/us/app/almapura/id6740913195");
+} else if (/Android/i.test(navigator.userAgent)) {
+    window.location.replace("https://play.google.com/store/apps/details?id=art.gandg.oracles");
+}
+window.onload = function() {
+let params = new URLSearchParams(window.location.search);
+let lang = Intl.DateTimeFormat().resolvedOptions().locale.split('-')[0]
+if (lang != "en" && lang != "es") {
+    lang = "en";
+}
+document.getElementById("app_store_img").src = "app_store_" + lang + ".png";
+document.getElementById("play_store_img").src = "play_store_" + lang + ".png";
+}
+</script>
+</head>
+<body>
+<center>
+<img src="lotus.png" alt="AlmaPura">
+<h1>AlmaPura</h1>
+<a href="https://apps.apple.com/us/app/almapura/id6740913195"><img src="" id="app_store_img" alt="Apple App Store"/></a></h1>
+<a href="https://play.google.com/store/apps/details?id=art.gandg.oracles"><img src="" id="play_store_img" alt="Google Play Store"/></a></h1>
+</center>
+</body>
+</html>
