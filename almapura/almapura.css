@@ -1,31 +1,39 @@
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: #ffffff;
     color: #000000;
-    max-width: 640px;
-    margin: 100px auto auto auto;
-    font-family: serif, Helvetica, "Times New Roman";
-    font-style: normal;
-    font-size: 14pt;
+    height: 95%;
 }
 
-a:link    { color: #0000ff; } /* unvisited link */
-a:visited { color: #0000ff; } /* visited link */
-a:hover   { color: #0000ff; } /* mouse over link */
-a:active  { color: #0000ff; } /* selected link */
+.main {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
 
-a:link    { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover   { text-decoration: underline; }
-a:active  { text-decoration: underline; }
+.wrapper {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    horizontal-align: middle;
+}
+
+#almapura_title {
+    font-size: 100px;
+    font-weight: bold;
+}
 
 #app_store_img {
-    height: 50px;
-    padding: 15px;
+    height: 90px;
+    padding: 25px;
 }
 
 #play_store_img {
-    height: 51px;
-    padding: 15px;
+    height: 91px;
+    padding: 25px;
 }
 
