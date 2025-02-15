@@ -1,4 +1,14 @@
 
+a:link    { color: #00b4b3; } /* unvisited link */
+a:visited { color: #00b4b3; } /* visited link */
+a:hover   { color: #00b4b3; } /* mouse over link */
+a:active  { color: #00b4b3; } /* selected link */
+
+a:link    { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover   { text-decoration: underline; }
+a:active  { text-decoration: underline; }
+
 html {
     height: 100%;
 }
@@ -25,6 +35,7 @@ body {
 #almapura_title {
     font-size: 100px;
     font-weight: bold;
+    padding-bottom: 25px;
 }
 
 #app_store_img {
@@ -35,5 +46,21 @@ body {
 #play_store_img {
     height: 91px;
     padding: 25px;
+}
+
+#gandg_link {
+    padding-top: 25px;
+}
+
+#gandg_img {
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#gandg_link_text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
 }
 
