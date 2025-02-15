@@ -49,11 +49,11 @@ body {
 }
 
 #gandg_link {
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 #gandg_img {
-    height: 50px;
+    height: 75px;
     display: inline-block;
     vertical-align: middle;
 }
@@ -61,6 +61,7 @@ body {
 #gandg_link_text {
     display: inline-block;
     vertical-align: middle;
-    font-size: 30px;
+    font-size: 50px;
+    font-weight: bold;
 }
 
