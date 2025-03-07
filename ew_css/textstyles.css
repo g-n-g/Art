@@ -1,38 +1,29 @@
-.Style1{font-family: 'Zapfino';
-font-size: 18px; 
-font-weight:700; 
-margin:0;
-color: #14A6AE;
-word-wrap: break-word;}
-.Style2{font-family: 'Georgia',serif;
+.Style1{font-family: 'Georgia',serif;
 font-size: 14px; 
 margin:0;
 word-wrap: break-word;}
-.Style3{font-family: 'AcademyEngravedLetPlain','Academy Engraved LET';
-font-size: 26px; 
-margin:0;
-color: #09C8C9;
-word-wrap: break-word;}
-.Style4{font-family: 'AcademyEngravedLetPlain','Academy Engraved LET';
-font-size: 26px; 
-font-weight:700; 
-margin:0;
-color: #14A6AF;
-word-wrap: break-word;}
-.Style5{font-family: 'Zapfino';
-font-size: 12px; 
-font-weight:700; 
-margin:0;
-color: #14A6AE;
-word-wrap: break-word;}
-.Style6{font-family: 'AcademyEngravedLetPlain','Academy Engraved LET';
+.Style2{font-family: 'Georgia-Bold','Georgia',serif;
 font-size: 14px; 
+font-weight:700; 
 margin:0;
-color: #09C8C9;
+word-wrap: break-word;}
+.Style3{font-family: 'Georgia-Italic','Georgia',serif;
+font-size: 14px; 
+font-style: italic;
+margin:0;
+word-wrap: break-word;}
+.Style4{font-family: 'Georgia-BoldItalic','Georgia',serif;
+font-size: 14px; 
+font-weight:700; 
+font-style: italic;
+margin:0;
+word-wrap: break-word;}
+.Style5{font-family: 'Georgia-Bold','Georgia',serif;
+font-size: 14px; 
+font-weight:700; 
+font-style: normal;
 word-wrap: break-word;}
 body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing: grayscale}
 a.outerlink{text-decoration:none}
-.animhidden{opacity: 0}
-.animvisible{opacity: 1}
 .animhidden{opacity: 0}
 .animvisible{opacity: 1}
