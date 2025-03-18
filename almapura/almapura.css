@@ -58,6 +58,12 @@ body {
     vertical-align: middle;
 }
 
+#gandg_small_img {
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 #gandg_link_text {
     display: inline-block;
     vertical-align: middle;
