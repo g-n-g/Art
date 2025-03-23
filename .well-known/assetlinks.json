@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "art.gandg.oracles",
+      "sha256_cert_fingerprints": [
+        "A8:71:17:6D:E6:DC:C8:9E:B6:D0:3D:51:BC:11:B6:E5:7F:18:70:FA:65:78:C1:79:7D:20:55:6D:96:AD:5E:5A"
+      ]
+    }
+  }
+]
