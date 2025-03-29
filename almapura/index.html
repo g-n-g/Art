@@ -16,7 +16,10 @@ window.onload = function() {
 let params = new URLSearchParams(window.location.search);
 let lang = params.get('lang')
 if (lang != "en" && lang != "es") {
-    lang = "en";
+    let lang = Intl.DateTimeFormat().resolvedOptions().locale.split('-')[0]
+    if (lang != "en" && lang != "es") {
+        lang = "en";
+    }
 }
 document.getElementById("app_store_img").src = "app_store_" + lang + ".png";
 document.getElementById("play_store_img").src = "play_store_" + lang + ".png";
