@@ -16,7 +16,7 @@ window.onload = function() {
 let params = new URLSearchParams(window.location.search);
 let lang = params.get('lang')
 if (lang != "en" && lang != "es") {
-    let lang = Intl.DateTimeFormat().resolvedOptions().locale.split('-')[0]
+    lang = Intl.DateTimeFormat().resolvedOptions().locale.split('-')[0]
     if (lang != "en" && lang != "es") {
         lang = "en";
     }
