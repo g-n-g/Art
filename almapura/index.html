@@ -13,22 +13,37 @@
 <link rel="icon" type="image/x-icon" href="https://gandg.art/almapura/favicon.ico" />
 <link rel="stylesheet" href="almapura.css">
 <script type="text/javascript">
-window.onload = function() {
-let params = new URLSearchParams(window.location.search);
-let lang = params.get('lang')
-if (lang != "en" && lang != "es") {
-    lang = Intl.DateTimeFormat().resolvedOptions().locale.split('-')[0]
-    if (lang != "en" && lang != "es") {
-        lang = "en";
+function setLang(lang) {
+    document.getElementById("app_store_img").src = "app_store_" + lang + ".png";
+    document.getElementById("play_store_img").src = "play_store_" + lang + ".png";
+    let almapura_desc = "Oracle Card Decks with Love";
+    let almapura_button_en = document.getElementById("almapura_button_en");
+    let almapura_button_es = document.getElementById("almapura_button_es");
+    if (lang == "es") {
+        almapura_desc = "Cartas de Oráculos con Amor";
+        almapura_button_en.style.color = 'black';
+        almapura_button_es.style.color = '#00b4b3';
+    } else {
+        almapura_button_en.style.color = '#00b4b3';
+        almapura_button_es.style.color = 'black';
     }
+    document.getElementById("almapura_desc").innerText = almapura_desc;
 }
-document.getElementById("app_store_img").src = "app_store_" + lang + ".png";
-document.getElementById("play_store_img").src = "play_store_" + lang + ".png";
-if(/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-    window.location.href = "https://apps.apple.com/us/app/almapura/id6740913195";
-} else if (/Android/i.test(navigator.userAgent)) {
-    window.location.href = "https://play.google.com/store/apps/details?id=art.gandg.oracles";
-}
+window.onload = function() {
+    let params = new URLSearchParams(window.location.search);
+    let lang = params.get('lang')
+    if (lang != "en" && lang != "es") {
+        lang = Intl.DateTimeFormat().resolvedOptions().locale.split('-')[0]
+        if (lang != "en" && lang != "es") {
+            lang = "en";
+        }
+    }
+    if(/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        window.location.href = "https://apps.apple.com/us/app/almapura/id6740913195";
+    } else if (/Android/i.test(navigator.userAgent)) {
+        window.location.href = "https://play.google.com/store/apps/details?id=art.gandg.oracles";
+    }
+    setLang(lang)
 }
 </script>
 </head>
@@ -37,6 +52,9 @@ if(/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
 <center>
   <img src="lotus.png" alt="AlmaPura">
   <div id="almapura_title">AlmaPura</div>
+  <p id="almapura_lang"><button class="almapura_button" id="almapura_button_en" onclick="setLang('en')">EN</button>
+                        <button class="almapura_button" id="almapura_button_es" onclick="setLang('es')">ES</button></p>
+  <p id="almapura_desc"></p>
 </br>
   <a href="https://apps.apple.com/us/app/almapura/id6740913195"><img src="" id="app_store_img" alt="Apple App Store"/></a></h1>
   <a href="https://play.google.com/store/apps/details?id=art.gandg.oracles"><img src="" id="play_store_img" alt="Google Play Store"/></a></h1>
