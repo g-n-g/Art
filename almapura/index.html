@@ -19,15 +19,21 @@ function setLang(lang) {
     let almapura_desc = "Oracle Card Decks with Love";
     let almapura_button_en = document.getElementById("almapura_button_en");
     let almapura_button_es = document.getElementById("almapura_button_es");
+    let almapura_app_store = document.getElementById("almapura_app_store");
+    let gandg_href = "https://gandg.art";
     if (lang == "es") {
         almapura_desc = "Cartas de Oráculos con Amor";
         almapura_button_en.style.color = 'black';
         almapura_button_es.style.color = '#00b4b3';
+        almapura_app_store.href = "https://apps.apple.com/es/app/almapura/id6740913195";
     } else {
         almapura_button_en.style.color = '#00b4b3';
         almapura_button_es.style.color = 'black';
+        almapura_app_store.href = "https://apps.apple.com/us/app/almapura/id6740913195";
+        gandg_href = "https://gandg.art/gngnaturespirit-english.html";
     }
     document.getElementById("almapura_desc").innerText = almapura_desc;
+    document.getElementById("gandg_link_a").href = gandg_href;
 }
 window.onload = function() {
     let params = new URLSearchParams(window.location.search);
@@ -38,8 +44,13 @@ window.onload = function() {
             lang = "en";
         }
     }
+    let app_store_country = "us"
+    if (lang != "en") {
+        app_store_country = lang
+    }
+    let app_store_link = "https://apps.apple.com/" + app_store_country + "/app/almapura/id6740913195";
     if(/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-        window.location.href = "https://apps.apple.com/us/app/almapura/id6740913195";
+        window.location.href = app_store_link;
     } else if (/Android/i.test(navigator.userAgent)) {
         window.location.href = "https://play.google.com/store/apps/details?id=art.gandg.oracles";
     }
@@ -56,12 +67,14 @@ window.onload = function() {
                         <button class="almapura_button" id="almapura_button_es" onclick="setLang('es')">ES</button></p>
   <p id="almapura_desc"></p>
 </br>
-  <a href="https://apps.apple.com/us/app/almapura/id6740913195"><img src="" id="app_store_img" alt="Apple App Store"/></a></h1>
-  <a href="https://play.google.com/store/apps/details?id=art.gandg.oracles"><img src="" id="play_store_img" alt="Google Play Store"/></a></h1>
+  <a id="almapura_app_store" href="https://apps.apple.com/us/app/almapura/id6740913195">
+    <img src="" id="app_store_img" alt="Apple App Store"/></a></h1>
+  <a href="https://play.google.com/store/apps/details?id=art.gandg.oracles">
+    <img src="" id="play_store_img" alt="Google Play Store"/></a></h1>
 <br/>
 <div id="gandg_link">
   <img src="gandg.png" alt="GandG" id="gandg_img"/>
-  <div id="gandg_link_text"><a href="https://gandg.art">www.gandg.art</a></div>
+  <div id="gandg_link_text"><a id="gandg_link_a" href="https://gandg.art">www.gandg.art</a></div>
 </div>
 </center>
 </div></div>
