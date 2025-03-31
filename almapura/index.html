@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>AlmaPura</title>
 <meta charset="UTF-8">
@@ -12,7 +12,7 @@
 <meta property="og:image" content="https://gandg.art/almapura/lotus_meta.jpg" />
 <link rel="icon" type="image/x-icon" href="https://gandg.art/almapura/favicon.ico" />
 <link rel="stylesheet" href="almapura.css">
-<script type="text/javascript">
+<script>
 function setLang(lang) {
     document.getElementById("app_store_img").src = "app_store_" + lang + ".png";
     document.getElementById("play_store_img").src = "play_store_" + lang + ".png";
@@ -60,23 +60,23 @@ window.onload = function() {
 </head>
 <body>
 <div class="main"><div class="wrapper">
-<center>
+<div class="centered">
   <img src="lotus.png" alt="AlmaPura">
   <div id="almapura_title">AlmaPura</div>
   <p id="almapura_lang"><button class="almapura_button" id="almapura_button_en" onclick="setLang('en')">EN</button>
                         <button class="almapura_button" id="almapura_button_es" onclick="setLang('es')">ES</button></p>
   <p id="almapura_desc"></p>
-</br>
+<br/>
   <a id="almapura_app_store" href="https://apps.apple.com/us/app/almapura/id6740913195">
-    <img src="" id="app_store_img" alt="Apple App Store"/></a></h1>
+    <img src="app_store_en.png" id="app_store_img" alt="Apple App Store"/></a>
   <a href="https://play.google.com/store/apps/details?id=art.gandg.oracles">
-    <img src="" id="play_store_img" alt="Google Play Store"/></a></h1>
+    <img src="play_store_en.png" id="play_store_img" alt="Google Play Store"/></a>
 <br/>
 <div id="gandg_link">
   <img src="gandg.png" alt="GandG" id="gandg_img"/>
   <div id="gandg_link_text"><a id="gandg_link_a" href="https://gandg.art">www.gandg.art</a></div>
 </div>
-</center>
+</div>
 </div></div>
 </body>
 </html>

@@ -32,6 +32,10 @@ body {
     horizontal-align: middle;
 }
 
+.centered {
+    text-align: center;
+}
+
 #almapura_title {
     font-size: 6em;
     font-weight: bold;
