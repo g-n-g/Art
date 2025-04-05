@@ -40,6 +40,9 @@ window.onload = function() {
     let lang = params.get('lang')
     if (lang != "en" && lang != "es") {
         lang = Intl.DateTimeFormat().resolvedOptions().locale.split('-')[0]
+        if (lang == "ca") {
+            lang = "es";
+        }
         if (lang != "en" && lang != "es") {
             lang = "en";
         }
