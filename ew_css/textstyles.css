@@ -1,28 +1,49 @@
-.Style1{font-family: 'Georgia',serif;
+.Style1{font-family: 'STIXTwoText','STIX Two Text';
+font-size: 18px; 
+margin:0;
+word-wrap: break-word;}
+.linkStyle_2{font-family: 'STIXTwoText','STIX Two Text';
+font-size: 18px; 
+color: #FE2F91;
+text-decoration: underline; 
+/*000#00F900#FE2F91#FE2F91*/
+word-wrap: break-word;}
+a.linkStyle_2:visited{color:#FE2F91; text-decoration:underline;}
+a.linkStyle_2:hover{color:#FE2F91; text-decoration:underline;}
+.Style5{font-family: 'STIXTwoText','STIX Two Text';
+font-size: 18px; 
+word-wrap: break-word;}
+.linkStyle_6{font-family: 'STIXTwoText_Bold','STIX Two Text';
+font-size: 18px; 
+color: #FE2F91;
+text-decoration: underline; 
+/*000#00F900#FE2F91#FE2F91*/
+word-wrap: break-word;}
+a.linkStyle_6:visited{color:#FE2F91; text-decoration:underline;}
+a.linkStyle_6:hover{color:#FE2F91; text-decoration:underline;}
+.Style9{font-family: 'STIXTwoText','STIX Two Text';
 font-size: 14px; 
 margin:0;
 word-wrap: break-word;}
-.Style2{font-family: 'Georgia-Bold','Georgia',serif;
+.linkStyle_10{font-family: 'STIXTwoText','STIX Two Text';
 font-size: 14px; 
-font-weight:700; 
-margin:0;
+color: #FE2F91;
+text-decoration: underline; 
+/*000#00F900#FE2F91#FE2F91*/
 word-wrap: break-word;}
-.Style3{font-family: 'Georgia-Italic','Georgia',serif;
+a.linkStyle_10:visited{color:#FE2F91; text-decoration:underline;}
+a.linkStyle_10:hover{color:#FE2F91; text-decoration:underline;}
+.Style13{font-family: 'STIXTwoText','STIX Two Text';
 font-size: 14px; 
-font-style: italic;
-margin:0;
 word-wrap: break-word;}
-.Style4{font-family: 'Georgia-BoldItalic','Georgia',serif;
+.linkStyle_14{font-family: 'STIXTwoText_Bold','STIX Two Text';
 font-size: 14px; 
-font-weight:700; 
-font-style: italic;
-margin:0;
+color: #FE2F91;
+text-decoration: underline; 
+/*000#00F900#FE2F91#FE2F91*/
 word-wrap: break-word;}
-.Style5{font-family: 'Georgia-Bold','Georgia',serif;
-font-size: 14px; 
-font-weight:700; 
-font-style: normal;
-word-wrap: break-word;}
+a.linkStyle_14:visited{color:#FE2F91; text-decoration:underline;}
+a.linkStyle_14:hover{color:#FE2F91; text-decoration:underline;}
 body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing: grayscale}
 a.outerlink{text-decoration:none}
 .animhidden{opacity: 0}
