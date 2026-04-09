@@ -2,3 +2,4 @@
 1.0.0+1,Spring,Primavera,22,5
 1.0.0+1,The fairies of Avalon,Las hadas de Ávalon,22,5
 1.0.3+34,Luminous Tales,Cuentos Luminosos,44,2
+1.0.4+35,Soul,Alma,22,2

@@ -1,7 +1,7 @@
 <MSG>
-id: 0
+id: 1
 minVersion: 1.0.0+5
-maxVersion: 1.0.0+5
+maxVersion: 1.0.3+34
 isOnlyForSubscribers: false
 platform: all
 content-en: A new oracle unlocks with the app update.
