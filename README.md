@@ -15,41 +15,41 @@ Esta versión se ha construido como web HTML/CSS/JS usando únicamente los archi
 - Sustituir ArtWork por foto real de taza/tótem de sirena si se aporta; de momento se usa el banner Etsy y la ilustración real de sirena `33.jpg`.
 
 ## Archivos copiados
-- G&G opción 2.png
-- logo_de_loto_rosa_almapura.png
-- Fondo_Web_Movil.jpg
-- Primavera oraculo portada.jpg
-- Spring Oracle cover.jpg
-- Hadas oraculo portada.jpg
-- Fairies oracle cover.jpg
-- Cuentos Luminosos Oráculo portada.jpg
-- Luminous Tales Oracle Cover.jpg
-- Tarot Alma Pura.jpg
-- EL_Camino_De_Los_Arcanos_Cover_Ebook.jpg
-- The path of the arcana.jpg
-- Amapola_Ola_En_El_Reino_Elemental.jpg
-- Amapola Ola in the kingdom of the four elements.jpg
-- Amapola_Ola_Y_Peter_Pan spañol e ingles.jpg
-- Las hadas de avalaon.jpg
-- Feiries of Avalon.jpg
-- Cuentos luminosos.jpg
-- Luminous tales.jpg
-- Shasta español.jpg
-- Shasta inglés.jpg
-- Las_Damas_Del_Nilo_Cober_Ebook.jpg
-- The ladies of the Nile cover ebook.jpg
-- Primavera Portada.jpg
-- Historias de luz y agua cover.png
-- Stories of light and water cover ebook.png
-- El sueño del agricultor portada.png
-- The farmer dream cover ebook.png
-- Cupido y el amor portada.png
-- Cupid and love cover.png
-- La cazadora de agua Portada.png
-- The water hunter cover.png
-- La estrella de la paz portada.png
-- The Star of Peace.png
-- Banner_Etsy_AlmaPura.jpg
+- g-and-g-opcion-2.png
+- logo-de-loto-rosa-almapura.png
+- fondo-web-movil.jpg
+- primavera-oraculo-portada.jpg
+- spring-oracle-cover.jpg
+- hadas-oraculo-portada.jpg
+- fairies-oracle-cover.jpg
+- cuentos-luminosos-oraculo-portada.jpg
+- luminous-tales-oracle-cover.jpg
+- tarot-alma-pura.jpg
+- el-camino-de-los-arcanos-cover-ebook.jpg
+- the-path-of-the-arcana.jpg
+- amapola-ola-en-el-reino-elemental.jpg
+- amapola-ola-in-the-kingdom-of-the-four-elements.jpg
+- amapola-ola-y-peter-pan-spanol-e-ingles.jpg
+- las-hadas-de-avalaon.jpg
+- feiries-of-avalon.jpg
+- cuentos-luminosos.jpg
+- luminous-tales.jpg
+- shasta-espanol.jpg
+- shasta-ingles.jpg
+- las-damas-del-nilo-cober-ebook.jpg
+- the-ladies-of-the-nile-cover-ebook.jpg
+- primavera-portada.jpg
+- historias-de-luz-y-agua-cover.png
+- stories-of-light-and-water-cover-ebook.png
+- el-sueno-del-agricultor-portada.png
+- the-farmer-dream-cover-ebook.png
+- cupido-y-el-amor-portada.png
+- cupid-and-love-cover.png
+- la-cazadora-de-agua-portada.png
+- the-water-hunter-cover.png
+- la-estrella-de-la-paz-portada.png
+- the-star-of-peace.png
+- banner-etsy-almapura.jpg
 - 250-gandg-lake-louise.jpg
 - 33.jpg
 
@@ -57,7 +57,7 @@ Esta versión se ha construido como web HTML/CSS/JS usando únicamente los archi
 - G&G foto perfil Gema.jpeg
 
 
-Actualización v4 logo: se ha sustituido el logo por el archivo exacto entregado por Mariana Gema: `assets/Logo AlmaPura.PNG`. El archivo se usa como copia exacta, sin modificar la imagen original.
+Actualización v4 logo: se ha sustituido el logo por el archivo exacto entregado por Mariana Gema: `assets/logo-almapura.png`. El archivo se usa como copia exacta, sin modificar la imagen original.
 
 
 Actualización v5 oráculos: las portadas de los oráculos ahora se muestran completas, sin recorte, usando un encaje tipo contain y proporción vertical similar a la sección de libros.
@@ -72,13 +72,13 @@ Actualización v8: se restaura la carta que se retiró por error en el carrusel 
 Actualización v9: se ha retirado del carrusel de Las hadas de Ávalon la carta indicada por Mariana Gema: la mujer con vestido amarillo que corresponde a Cuentos Luminosos en inglés. No se han modificado los archivos de imagen.
 
 
-Actualización v10: se añade al carrusel de Las hadas de Ávalon la carta correcta `17(2).jpg` / Abril, aportada por Mariana Gema. También se evita que la carta Alegría cambie a April al activar inglés. No se han modificado los archivos de imagen.
+Actualización v10: se añade al carrusel de Las hadas de Ávalon la carta correcta `17-2.jpg` / Abril, aportada por Mariana Gema. También se evita que la carta Alegría cambie a April al activar inglés. No se han modificado los archivos de imagen.
 
 
 Actualización v11 ArtWork: se eliminan las dos imágenes anteriores de la sección ArtWork y se sustituyen por las dos imágenes aportadas por Mariana Gema: bolsa tote Love Yourself y taza Love Yourself. Las imágenes se copian tal cual, sin modificación.
 
 
-Actualización v12 ArtWork: se eliminan las dos imágenes de producto anteriores y se sustituye la sección por el PNG limpio `1(3).png`, copiado tal cual, sin fondo añadido y sin modificar la imagen.
+Actualización v12 ArtWork: se eliminan las dos imágenes de producto anteriores y se sustituye la sección por el PNG limpio `1-3.png`, copiado tal cual, sin fondo añadido y sin modificar la imagen.
 
 
 Actualización v13: se añaden a la web los iconos del modelo visual aprobado: teléfono para App AlmaPura, loto para Oráculos, libro para Libros, estrella para ArtWork y dos personas para Gema & Gábor. Se implementan como SVG en el index/CSS, sin generar imágenes nuevas.

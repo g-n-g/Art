@@ -20,7 +20,7 @@ body {
     radial-gradient(circle at 18% 16%, rgba(96, 190, 203, .08), transparent 28%),
     radial-gradient(circle at 82% 28%, rgba(235, 172, 88, .10), transparent 30%),
     linear-gradient(rgba(255,248,232,.92), rgba(255,244,225,.95)),
-    url('assets/Fondo_Web_Movil.jpg') center top / 680px auto fixed;
+    url('assets/fondo-web-movil.jpg') center top / 680px auto fixed;
 }
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
@@ -777,5 +777,102 @@ p { font-size: clamp(.98rem, 3.6vw, 1.08rem); line-height: 1.46; }
   .legal-table{
     display: block;
     overflow-x: auto;
+  }
+}
+
+
+/* v35: cabecera móvil definitiva.
+   En escritorio se conserva la cabecera panorámica final.
+   En teléfono se usa la cabecera móvil anterior, completa y sin recortes. */
+.hero-image-mobile{
+  display: none;
+}
+
+@media (max-width: 720px){
+  .hero.hero-mobile-ready{
+    padding: 12px 10px 18px !important;
+    background: transparent !important;
+    min-height: auto !important;
+  }
+
+  .hero.hero-mobile-ready .hero-image-wrap{
+    width: 100% !important;
+    max-width: 430px !important;
+    margin: 0 auto !important;
+    border-radius: 26px !important;
+    overflow: hidden !important;
+    background: #fffaf0 !important;
+    box-shadow: 0 14px 34px rgba(77, 61, 36, .18) !important;
+  }
+
+  .hero.hero-mobile-ready .hero-image-desktop{
+    display: none !important;
+  }
+
+  .hero.hero-mobile-ready .hero-image-mobile{
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    border-radius: 0 !important;
+  }
+
+  .hero.hero-mobile-ready .hero-actions{
+    position: static !important;
+    left: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    padding: 14px 12px 16px !important;
+    margin: 0 !important;
+    background: #fffaf0 !important;
+  }
+
+  .hero.hero-mobile-ready .primary-btn,
+  .hero.hero-mobile-ready .ghost-link{
+    white-space: nowrap !important;
+    font-size: .92rem !important;
+    line-height: 1.1 !important;
+    padding: 10px 14px !important;
+  }
+
+  .quick-nav{
+    margin-top: 8px !important;
+  }
+}
+
+@media (max-width: 430px){
+  .hero.hero-mobile-ready{
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .hero.hero-mobile-ready .hero-image-wrap{
+    border-radius: 22px !important;
+  }
+
+  .hero.hero-mobile-ready .hero-actions{
+    padding: 12px 8px 14px !important;
+    gap: 8px !important;
+  }
+
+  .hero.hero-mobile-ready .primary-btn,
+  .hero.hero-mobile-ready .ghost-link{
+    font-size: .88rem !important;
+    padding: 9px 12px !important;
+  }
+}
+
+@media (max-width: 360px){
+  .hero.hero-mobile-ready .hero-actions{
+    flex-direction: column !important;
   }
 }
