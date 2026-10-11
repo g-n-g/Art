@@ -20,7 +20,7 @@ body {
     radial-gradient(circle at 18% 16%, rgba(96, 190, 203, .08), transparent 28%),
     radial-gradient(circle at 82% 28%, rgba(235, 172, 88, .10), transparent 30%),
     linear-gradient(rgba(255,248,232,.92), rgba(255,244,225,.95)),
-    url('assets/fondo-web-movil.jpg') center top / 680px auto fixed;
+    url('assets/fondo-web-movil.webp') center top / 680px auto fixed;
 }
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }

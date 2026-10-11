@@ -5,6 +5,7 @@ function setLang(lang) {
   root.lang = lang;
   document.querySelectorAll('img[data-es-src]').forEach(img => {
     img.src = img.dataset[lang + 'Src'];
+    if (img.dataset[lang + 'Srcset']) img.srcset = img.dataset[lang + 'Srcset'];
     img.alt = img.dataset[lang + 'Alt'];
   });
   document.querySelectorAll('a[data-es-href]').forEach(a => {
