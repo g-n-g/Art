@@ -781,35 +781,34 @@ p { font-size: clamp(.98rem, 3.6vw, 1.08rem); line-height: 1.46; }
 }
 
 
-/* v35: cabecera móvil definitiva.
-   En escritorio se conserva la cabecera panorámica final.
-   En teléfono se usa la cabecera móvil anterior, completa y sin recortes. */
-.hero-image-mobile{
-  display: none;
-}
-
+/* v36: móvil con la misma cabecera que ordenador.
+   No se usa imagen alternativa. La imagen se muestra completa, sin recorte. */
 @media (max-width: 720px){
-  .hero.hero-mobile-ready{
-    padding: 12px 10px 18px !important;
+  .hero{
+    padding: 10px 10px 18px !important;
     background: transparent !important;
     min-height: auto !important;
+    height: auto !important;
+    display: block !important;
+    overflow: visible !important;
   }
 
-  .hero.hero-mobile-ready .hero-image-wrap{
+  .hero-image-wrap{
     width: 100% !important;
-    max-width: 430px !important;
+    max-width: 100% !important;
     margin: 0 auto !important;
-    border-radius: 26px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: auto !important;
+    display: block !important;
     overflow: hidden !important;
+    border-radius: 22px !important;
     background: #fffaf0 !important;
     box-shadow: 0 14px 34px rgba(77, 61, 36, .18) !important;
   }
 
-  .hero.hero-mobile-ready .hero-image-desktop{
-    display: none !important;
-  }
-
-  .hero.hero-mobile-ready .hero-image-mobile{
+  .hero-image{
+    position: static !important;
     display: block !important;
     width: 100% !important;
     height: auto !important;
@@ -817,10 +816,11 @@ p { font-size: clamp(.98rem, 3.6vw, 1.08rem); line-height: 1.46; }
     max-height: none !important;
     object-fit: contain !important;
     object-position: center center !important;
+    transform: none !important;
     border-radius: 0 !important;
   }
 
-  .hero.hero-mobile-ready .hero-actions{
+  .hero-actions{
     position: static !important;
     left: auto !important;
     bottom: auto !important;
@@ -831,13 +831,13 @@ p { font-size: clamp(.98rem, 3.6vw, 1.08rem); line-height: 1.46; }
     align-items: center !important;
     flex-wrap: wrap !important;
     gap: 10px !important;
-    padding: 14px 12px 16px !important;
+    padding: 13px 10px 15px !important;
     margin: 0 !important;
     background: #fffaf0 !important;
   }
 
-  .hero.hero-mobile-ready .primary-btn,
-  .hero.hero-mobile-ready .ghost-link{
+  .primary-btn,
+  .ghost-link{
     white-space: nowrap !important;
     font-size: .92rem !important;
     line-height: 1.1 !important;
@@ -845,34 +845,28 @@ p { font-size: clamp(.98rem, 3.6vw, 1.08rem); line-height: 1.46; }
   }
 
   .quick-nav{
-    margin-top: 8px !important;
+    margin-top: 10px !important;
   }
 }
 
 @media (max-width: 430px){
-  .hero.hero-mobile-ready{
-    padding-left: 8px !important;
-    padding-right: 8px !important;
+  .hero{
+    padding-left: 7px !important;
+    padding-right: 7px !important;
   }
 
-  .hero.hero-mobile-ready .hero-image-wrap{
-    border-radius: 22px !important;
+  .hero-image-wrap{
+    border-radius: 18px !important;
   }
 
-  .hero.hero-mobile-ready .hero-actions{
-    padding: 12px 8px 14px !important;
+  .hero-actions{
+    padding: 11px 7px 13px !important;
     gap: 8px !important;
   }
 
-  .hero.hero-mobile-ready .primary-btn,
-  .hero.hero-mobile-ready .ghost-link{
+  .primary-btn,
+  .ghost-link{
     font-size: .88rem !important;
     padding: 9px 12px !important;
-  }
-}
-
-@media (max-width: 360px){
-  .hero.hero-mobile-ready .hero-actions{
-    flex-direction: column !important;
   }
 }
